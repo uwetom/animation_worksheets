@@ -257,8 +257,7 @@ We now have a basic ball animation and you have covered all the basic skills of 
 
 - Add a keyframes to translate x or translate z to move it sideways as it bounces.
 
-- Try changing the amount you squash and stretch the ball, can you make it look like its made of a harder material?
+- Try changing the amount you squash and stretch the ball, can you make
 
-- What happens if you rotate the ball so that it spins as it move? consider how you may animate this in a different order next time to fix any issues.
-
+- What happens if you rotate the ball so that it spins as it move? consider how you may animate this in a different order in order to fix any issues.
 

@@ -3,27 +3,29 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Bouncing ball</title>
+    <title>Ball bounce worksheet</title>
 </head>
 
 <body>
     <h1>Animation basics</h1>
-    <p>This worksheet covers the fundamental skills needed to animate.</p>
+    <p>This worksheet covers the fundamental skills needed to animate in Maya.</p>
     <h3>Create a new scene</h3>
     <ul>
         <li>Open Maya and create a new scene</li>
     </ul>
     <h3>Create the ground</h3>
     <ul>
-        <li>Create a ground plane by <strong>Double clicking</strong> on the polygon Plane button.</li>
+        <li>Create a ground plane by <strong>Double clicking</strong> on the polygon Plane button to open the polygon
+            plane options panel.</li>
     </ul>
     <p><img src="images/make_plane.PNG" alt="" /></p>
     <ul>
-        <li>Setting the width an height to 100 and the divisions to 1.</li>
+        <li>Set the width and height to 100 and the divisions to 1.</li>
     </ul>
     <p><img src="images/plane_settings.PNG" alt="" /></p>
     <ul>
-        <li>Lastly, rename it to "ground" in the outliner.</li>
+        <li>It is always a good idea to rename things as you go, so rename the new plane to "ground" in the outliner.
+        </li>
     </ul>
     <p><img src="images/ground.PNG" alt="" /></p>
     <h3>Create a ball</h3>
@@ -34,14 +36,14 @@
     </ul>
     <p><img src="images/sphere_settings.PNG" alt="" /></p>
     <ul>
-        <li>
-            <p>rename it to "ball" in the outliner.</p>
-        </li>
-        <li>
-            <p>Try to give the ball a colour.
-                (HINT: With the ball selected right click and choose "Assign new material" )</p>
-        </li>
+        <li>Rename it to "ball" in the outliner.</li>
     </ul>
+    <h3>Challenge</h3>
+    <ul>
+        <li>Give the ball a colour or a texture.</li>
+    </ul>
+    <p>Make sure you name the new texture appropriately and you can see it in the ball.</p>
+    <p>(HINT: With the ball selected right click and choose "Assign new material" )</p>
     <h2>Animation workspace</h2>
     <p>Now that we have set up our scene we can start to animate.</p>
     <p>When animating it will be helpful to have access to different panel.</p>
@@ -56,15 +58,16 @@
     <p>At the bottom of the screen is the <strong>range slider</strong>, this is where we change the settings for the
         animation</p>
     <p><img src="images/animation_settings.PNG" alt="" /></p>
-    <p>Above this is the <strong>timeline</strong>, this shows us when we have set keyframes on the selected object.</p>
+    <p>Above this is the <strong>timeline</strong>, this shows us which frame we are currently looking at and where we
+        have set keyframes on the selected object.</p>
     <p><img src="images/timeline.PNG" alt="" /></p>
     <p>Finally, we have the graph editor, this shows how each keyframe transitions to the next.</p>
     <p><img src="images/graph_editor.PNG" alt="" /></p>
     <p>We will use all these panels in the worksheet.</p>
     <h2>Animation settings</h2>
-    <p>We want the animation to run at 30 frames per second (FPS) and be a few seconds long.</p>
+    <p>We want the animation to run at 30 frames per second (FPS) and the total animation to be a 3 seconds long.</p>
     <ul>
-        <li>On the <strong>range slider</strong> panel change Change the FPS to 30</li>
+        <li>On the <strong>range slider</strong> panel change the FPS to <strong>30 fps</strong>.</li>
     </ul>
     <p><img src="images/30_fps.PNG" alt="" /></p>
     <ul>
@@ -75,7 +78,7 @@
     <ul>
         <li>
             <p>Move the slider to the far left, and change the right hand number to 60. This shows the range currently
-                viewable in the timeline above.</p>
+                viewable in the timeline above (frame 1 - 60, which equates to 2 seconds of time).</p>
         </li>
         <li>
             <p>Lastly, click on the <strong>time slider preferences</strong> button in the bottom right to open the
@@ -85,10 +88,11 @@
     <p><img src="images/time_slider_preferences.PNG" alt="" /></p>
     <ul>
         <li>Change the playback speed to <strong>30fps x 1</strong> this will ensure the time line plays our animation
-            at the correct speed.</li>
+            at the correct speed when we press play.</li>
     </ul>
-    <h3>Create a key frame</h3>
-    <p>Now that we have set the animation settings we can start to animate our ball.</p>
+    <p><img src="images/playback_speed.PNG" alt="" /></p>
+    <h2>Create a key frame</h2>
+    <p>Now that we have set up the workspace we can start to animate.</p>
     <ul>
         <li>Click on the far left of the time slider to select the first frame.</li>
     </ul>
@@ -103,49 +107,61 @@
     <p><img src="images/key_selected.PNG" alt="" /></p>
     <p>The property should turn red to indicate that it has a key frame, you should also see a red line on the timeline
         on frame 1.</p>
-    <h2>Another keyframe</h2>
+    <p><img src="images/first_frame_screen.PNG" alt="" /></p>
+    <h3>Another keyframe</h3>
     <ul>
         <li>Now move the playhead on the time slider to frame 15</li>
     </ul>
     <p><img src="images/15.PNG" alt="" /></p>
     <ul>
         <li>
-            <p>Move the ball down so that it is just touching the ground (it may be helpful to go into the side view)
-            </p>
+            <p>Move the ball down so that it is just touching the ground, it may be helpful to go into the side view but
+                it should be 10 as that is the radius of the ball.</p>
         </li>
         <li>
-            <p>Keyframe the ball again by right clicking on the Translate Y property in the channel box.</p>
+            <p>Keyframe the ball again by right clicking on the Translate Y property in the channel box and choosing
+                <strong>Key selected</strong>.</p>
         </li>
     </ul>
-    <p>You should now have 2 key frames.</p>
-    <h2>Set some more keyframes</h2>
+    <p>You should now have 2 red lines on the time line indicating 2 keyframes.</p>
+    <p><img src="images/two_keyframes.PNG" alt="" /></p>
+    <h3>Set some more keyframes</h3>
     <p>You can now set the last few keyframes on your own, we want the ball to bounce twice, so set the following:</p>
-    <p>frame 30, set y to 90
-        frame 45, set y to 10
-        frame 60, set y to 80</p>
+    <ul>
+        <li>at frame 30, set <strong>translate y</strong> to 90</li>
+        <li>at frame 45, set <strong>translate y</strong> to 10</li>
+        <li>at frame 60, set <strong>translate y</strong> to 80</li>
+    </ul>
     <h2>Play the animation</h2>
     <p>You can now play your animation by clicking on the play button to the right of the timeline (shortcut is
         <strong>alt/option + v</strong>)</p>
     <p><img src="images/play_animation.PNG" alt="" /></p>
-    <p>It should be animating, but it doesn't really look like its bouncing. Why does it look wrong?</p>
-    <p><img src="images/ball_animation_1.gif" alt="" /></p>
-    <h2>Graph editor</h2>
-    <p>With the ball selected, hover over the graph editor and press <strong>f</strong> on the keyboard to fill the
-        graph to the screen.</p>
-    <p><img src="images/floaty_graph.PNG" alt="" /></p>
-    <p>By default Maya creates a smooth transition between keyframes.</p>
-    <p>To make the bounce more realistic
-        we want a sharp change of direction on the bottom where it hits the floor and incease the curve on the top where
-        the ball looses the right against gravity.</p>
+    <p><img src="images/floaty.gif" alt="" /></p>
     <ul>
-        <li>Select the second keyframe on the graph editor so you can see the handles</li>
+        <li>
+            <p>Make sure yours looks like the animation above, if not work out where you went wrong.</p>
+        </li>
+        <li>
+            <p>Closely watch your animation, it should be going up and down but it doesn't really look like its
+                bouncing. Why does it look wrong?</p>
+        </li>
+    </ul>
+    <h2>Graph editor</h2>
+    <p>With the ball selected, hover over the graph editor and press <strong>f</strong> on the keyboard so that the
+        complete graph fills the panel.</p>
+    <p><img src="images/floaty_graph.PNG" alt="" /></p>
+    <p>The yellow diamonds show where you have set keyframes, the green line shows where Maya has created a smooth
+        transition between the keyframes.</p>
+    <p>To make the bounce more realistic we want to edit this line to create a sharp change of direction on the bottom
+        where it hits the floor and increase the curve on the top.</p>
+    <ul>
+        <li>Select the second keyframe on the graph editor so you can see the handles sticking out the side.</li>
     </ul>
     <p><img src="images/second_keyframe.PNG" alt="" /></p>
     <p>You can move the handles around to change the shape of the curve, but we want to move them around independently.
     </p>
     <ul>
-        <li><strong>Right click</strong> on keyframe and select <strong>break keyframes</strong> or press the button on
-            the top right of the panel.</li>
+        <li><strong>Right click</strong> on keyframe and select <strong>break keyframes</strong>.</li>
     </ul>
     <p><img src="images/break_tangents.PNG" alt="" /></p>
     <p>We can now move each handle independently but we also want to change the length so we have full control.</p>
@@ -154,17 +170,22 @@
     </ul>
     <p><img src="images/weighted_tangents.PNG" alt="" /></p>
     <ul>
+        <li>Move the handles to create a v shape at the bottom of the bounce.</li>
+    </ul>
+    <p><img src="images/graph_bounce_one.PNG" alt="" /></p>
+    <ul>
         <li>You can now alter all the keyframes to create a sharp change in direction at the bottom of the bounce, and a
             gentle curve at the top.</li>
     </ul>
     <p><img src="images/curved_graph.PNG" alt="" /></p>
     <p>play the animation again to see the result.</p>
-    <p><img src="images/ball_bouncing_on_curve.gif" alt="" /></p>
+    <p><img src="images/hard_bounce.gif" alt="" /></p>
     <h2>Squash and Stretch</h2>
     <p>This is one of the most important principles in animation.</p>
     <p>When an object moves or collides with something it will deform.</p>
     <p>If your object is made of a rubbery or flexible material it will deform more.</p>
-    <p>We want the ball to stay circular at the top of the bounce.</p>
+    <h3>Top of the bounce</h3>
+    <p>firstly, we want the ball to stay spherical at the top of the bounce.</p>
     <ul>
         <li>Select frame 1, and keyframe Scale X, Scale Y and Scale Z at 1.</li>
     </ul>
@@ -173,45 +194,64 @@
     <ul>
         <li>Do the same thing on Frame 30 and 60.</li>
     </ul>
-    <p>We can now move to frame 15 and squash the ball.</p>
-    <p>We need to squash it vertically by reducing the scale Y but to conserve the balls volume, this means we also need
-        to stretch it horizontally by increasing Scale X and Scale Z.</p>
-    <p><img src="images/key_squash.PNG" alt="" /></p>
-    <p>You may now see that the ball is above the ground</p>
+    <h3>bottom of the bounce</h3>
+    <p>We can now keyframe the squash when it hits the ground.</p>
     <ul>
-        <li>Adjust and key y position and key it again.</li>
+        <li>Move to frame 15 and squash the ball vertically by reducing the Y Scale and keyframing</li>
+    </ul>
+    <p>To conserve the balls volume, this means we need to simultaneously stretch it horizontally</p>
+    <ul>
+        <li>increase the Scale X and Scale Z and keyframe. I have used 1.3 and 0.7.</li>
+    </ul>
+    <p><img src="images/key_squash.PNG" alt="" /></p>
+    <p>You should notice that the ball now doesn't hit the ground.</p>
+    <ul>
+        <li>Adjust and translate y so that the ball hits the floor at frame 15 and key it again.</li>
     </ul>
     <p><img src="images/contact_floor.PNG" alt="" /></p>
     <ul>
-        <li>Do the same for the second bounce at frame 45 and then look at your animation.</li>
-        <li></li>
-        <li>Why does it look wrong now? How can we fix it?</li>
+        <li>
+            <p>Do the same for the second bounce at frame 45 and then look at your animation.</p>
+        </li>
+        <li>
+            <p>Why does it look wrong now? How can we fix it?</p>
+        </li>
     </ul>
-    <p><img src="images/ball_squash.gif" alt="" /></p>
-    <h2>Refine the animation</h2>
+    <p><img src="images/squash_bounce.gif" alt="" /></p>
+    <h3>Refine the animation</h3>
     <p>We have a similar issue as before, Maya is smoothing out the transition between keyframes so the ball starts to
         squash as it falls.</p>
     <p>To fix this we need the ball to remain spherical until just before it hits the ground.</p>
     <ul>
         <li>
-            <p>On frame 14, just before the ball hits the ground, key the scale of the ball to 1.</p>
+            <p>On frame 14, just before the ball hits the ground, key the x, y and z scale of the ball to 1.</p>
         </li>
         <li>
             <p>Do the same thing on frame 44.</p>
         </li>
     </ul>
-    <p>The ball should now stay spherical as it falls, but you may also want to add a keyframe a after the bounce so
-        that is returns to its previous shape quicker.</p>
+    <p>You also need to key frame the scale a few frames after the bounce so it returns to its original shape quicker.
+    </p>
     <ul>
-        <li>Add a keyframe to frame 18 and 48, keying the balls scale back to 1.</li>
+        <li>Add a keyframe to frame 18 and 48, keying the balls x, y and z scale back to 1.</li>
     </ul>
-    <p><img src="images/ball_final.gif" alt="" /></p>
-    <h3>Final animation</h3>
+    <h2>Final animation</h2>
     <p>We now have a basic ball animation and you have covered all the basic skills of animating simple object in Maya.
     </p>
+    <p><img src="images/ball_final.gif" alt="" /></p>
     <h2>Final challenge</h2>
     <ul>
-        <li>Add a keyframes to translate x or translate z to move it sideways as it bounces.</li>
+        <li>
+            <p>Add a keyframes to translate x or translate z to move it sideways as it bounces.</p>
+        </li>
+        <li>
+            <p>Try changing the amount you squash and stretch the ball, can you make it look like its made of a harder
+                material?</p>
+        </li>
+        <li>
+            <p>What happens if you rotate the ball so that it spins as it move? consider how you may animate this in a
+                different order next time to fix any issues.</p>
+        </li>
     </ul>
 </body>
 
