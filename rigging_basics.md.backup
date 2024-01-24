@@ -1,6 +1,8 @@
 ## Rigging
 
-In this worksheet we are going to cover the fundamental concepts of rigging a character. 
+In this worksheet we are going to cover the fundamental concepts of rigging a character.
+
+We will cover creating a skeleton and forward kinematic controller. 
 
 ### Open Maya and set up workspace
 
@@ -51,13 +53,13 @@ In this worksheet we are going to cover the fundamental concepts of rigging a ch
 
 ![](images/name_joints.PNG)
 
-### Add arm joints
+#### Add arm joints
 
-- Select *spine_2* in the outliner, and with the joint tool selected add joints to the right shoulder and hand.
+- Select *spine_2* in the outliner, and with the joint tool selected add joints to the right shoulder and hand. You may want to turn off grid snap to place them more acurately.
 
 ![](images/shoulder_joint.PNG)
 
-- rename the right shoulder joint and the right hand joint in the Outliner.
+- Rename the right shoulder joint and the right hand joint in the Outliner.
 - The joint chain in your Outliner should now look like this:
 
 ![](images/right_joint_chain.PNG)
@@ -67,7 +69,7 @@ In this worksheet we are going to cover the fundamental concepts of rigging a ch
 
 #### Mirror the arm
 
-- our model is symetrical so we can mirror the right arm across.
+- Our model is symetrical so we can mirror the right arm across.
 - Select **right_shoulder** in the outliner and select the option box next to **Skeleton > Mirror joints**
 
 ![](images/mirror_joints.PNG)
@@ -105,6 +107,8 @@ The last thing that is important to do is reset the rotation or all the joints.
 - Make sure your settings match these
 
 ![](images/orient_joints.PNG)
+
+- Press Apply.
 
 ### Add controllers
 
@@ -190,7 +194,6 @@ You can now controll the entire skeleton by just using the controllers.
 
 For this example we will just create these few, but I hope you can see that on a more complex skeleton we could create many more controller ( fingers, legs etc)
 
-
 ### Skinning
 
 Now we get to the best bit, we attach the skeleton to the mesh in a proccess call **Skinning**
@@ -221,9 +224,16 @@ You may have noticed that the hat and eyes don't stick to the head.
 
 ![](images/hatandeye.PNG)
 
-- press **p** on the keyboard to parent the hat and eyes to the controller.
+- Press **p** on the keyboard to parent the hat and eyes to the controller.
 
 You can now rotate the neck controller and the eyes and hat should stick to the head.
+
+## Finished Rig
+
+We have now created a functional rig for a character, the controllers can now be keyframed to animate.
+
+Althought we have covered the creating of a basic rig, more would need to be done for a more complex character. Int he ne
+
 
 
 
