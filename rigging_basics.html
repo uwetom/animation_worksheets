@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Rigging basics</title>
+</head>
+
+<body>
+    <h2>Rigging</h2>
+    <p>In this worksheet we are going to cover the fundamental concepts of rigging a character.</p>
+    <h3>Open Maya and set up workspace</h3>
+    <ul>
+        <li>Open Maya and make a new scene</li>
+        <li>In the top right of the screen, change the menu set to <strong>Rigging</strong>.</li>
+    </ul>
+    <p><img src="images/rigging.PNG" alt="" /></p>
+    <h3>Import the model.</h3>
+    <ul>
+        <li>Import the snowman model from Blackboard by going to <strong>File &gt; Import</strong></li>
+    </ul>
+    <h3>Create a Skeleton</h3>
+    <ul>
+        <li>Enter the front view by tapping the space bar, hovering over the front view, and tapping space again.</li>
+    </ul>
+    <p><img src="images/front_view.gif" alt="" /></p>
+    <ul>
+        <li>Turn on X-ray joints and X-ray shader in the Shader panel menu item.</li>
+    </ul>
+    <p><img src="images/xray_joints.PNG" alt="" /></p>
+    <ul>
+        <li>Turn on <strong>snap to projected center</strong> on the top menu bar.</li>
+    </ul>
+    <p><img src="images/snap.PNG" alt="" /></p>
+    <h4>Adding spine joints</h4>
+    <ul>
+        <li>Open the <strong>Rigging</strong> tab</li>
+    </ul>
+    <p><img src="images/rigging_tab.PNG" alt="" /></p>
+    <ul>
+        <li>Select the <strong>Create Joint</strong> button</li>
+    </ul>
+    <p><img src="images/Create_joint.PNG" alt="" /></p>
+    <ul>
+        <li>Click on the centre of the bottom of the Snowman to add your first joint, this is the root joint.</li>
+    </ul>
+    <p><img src="images/root_joint.PNG" alt="" /></p>
+    <ul>
+        <li>Click to add more joints at the waist, chest,neck and the top of the head.</li>
+    </ul>
+    <p><img src="images/spine_joints.PNG" alt="" /></p>
+    <ul>
+        <li>
+            <p>In the Outliner, open up all the joints by pressing the <strong>+</strong> symbol</p>
+        </li>
+        <li>
+            <p>Rename all the joints by double clicking on them, this is really important and will help you later.</p>
+        </li>
+    </ul>
+    <p><img src="images/name_joints.PNG" alt="" /></p>
+    <h3>Add arm joints</h3>
+    <ul>
+        <li>Select <em>spine_2</em> in the outliner, and with the joint tool selected add joints to the right shoulder
+            and hand.</li>
+    </ul>
+    <p><img src="images/shoulder_joint.PNG" alt="" /></p>
+    <ul>
+        <li>rename the right shoulder joint and the right hand joint in the Outliner.</li>
+        <li>The joint chain in your Outliner should now look like this:</li>
+    </ul>
+    <p><img src="images/right_joint_chain.PNG" alt="" /></p>
+    <ul>
+        <li>Check yours carefully, if it doesn't look right you can move joints around in the outliner by <strong>middle
+                mouse clicking and dragging</strong> on them.</li>
+        <li>If you cannot fix it, you can just delete the bad joints and make them again.</li>
+    </ul>
+    <h4>Mirror the arm</h4>
+    <ul>
+        <li>our model is symetrical so we can mirror the right arm across.</li>
+        <li>Select <strong>right_shoulder</strong> in the outliner and select the option box next to <strong>Skeleton
+                &gt; Mirror joints</strong></li>
+    </ul>
+    <p><img src="images/mirror_joints.PNG" alt="" /></p>
+    <ul>
+        <li>Change the options to mirror across the <strong>YZ</strong> axis and replace <strong>right_</strong> with
+            <strong>left_</strong> (assuming you named your joint correctly before)</li>
+        <li>Press <strong>apply</strong> and you should have a left arm</li>
+    </ul>
+    <p><img src="images/complete_skeleton.PNG" alt="" /></p>
+    <h4>Check the perspective view</h4>
+    <ul>
+        <li>
+            <p>Go back into the perspective view (HINT:tap the space bar)</p>
+        </li>
+        <li>
+            <p>Turn on <strong>x-ray</strong> joints (HINT: shading &gt; x-ray joints)</p>
+        </li>
+        <li>
+            <p>Orbit around the snowman to check that all the joints look like they are in the centre of the snowman and
+                its arms.</p>
+        </li>
+        <li>
+            <p>If they are not you can select individual joints in the Outliner, and then press <strong>w</strong> to
+                move them. This will move the entire joint chain, if you just want to move one joint press
+                <strong>d</strong></p>
+        </li>
+    </ul>
+    <h4>Tidy up skeleton</h4>
+    <p>The last thing that is important to do is reset the rotation or all the joints.</p>
+    <ul>
+        <li>Select all the joints in the outliner by clicking the root and shift clicking the last one.</li>
+    </ul>
+    <p><img src="images/select_all_joints.PNG" alt="" /></p>
+    <ul>
+        <li>In the top menu, choose <strong>Modify &gt; Freeze Transformations</strong></li>
+    </ul>
+    <p><img src="images/freeze_transfomations.PNG" alt="" /></p>
+    <ul>
+        <li>Select just the root controller and press the options button next to <strong>Skeleton &gt; Orient
+                joints</strong></li>
+    </ul>
+    <p><img src="images/orient_joints.PNG" alt="" /></p>
+    <ul>
+        <li>Make sure your settings match these</li>
+    </ul>
+    <p><img src="images/orient_joints.PNG" alt="" /></p>
+    <ul>
+        <li>Press Apply.</li>
+    </ul>
+    <h3>Add controllers</h3>
+    <p>To make the skeleton easier to animate we add controllers.</p>
+    <ul>
+        <li>Open the curves tab</li>
+    </ul>
+    <p><img src="images/curves_tab.PNG" alt="" /></p>
+    <ul>
+        <li>Create a circle</li>
+    </ul>
+    <p><img src="images/Create_circle.PNG" alt="" /></p>
+    <ul>
+        <li>Scale the circle up so it is larger than the base of the snowman</li>
+    </ul>
+    <p><img src="images/root_circle.PNG" alt="" /></p>
+    <ul>
+        <li>
+            <p>Create 2 more circles, move and scale them so they sit around the waist joint and the neck joint.</p>
+        </li>
+        <li>
+            <p>Create 2 more circles, rotate, scale and move them so they sit around the shoulder joints</p>
+        </li>
+    </ul>
+    <p><img src="images/waist_neck_controller.PNG" alt="" /></p>
+    <ul>
+        <li>Rename circles in the outliner</li>
+    </ul>
+    <p><img src="images/rename_controllers.PNG" alt="" /></p>
+    <ul>
+        <li>Select all the circles and freeze the transformations by going to the top menu item <strong>Modify &gt;
+                Freeze Transformations</strong></li>
+    </ul>
+    <p><img src="images/freeze_transormations.PNG" alt="" /></p>
+    <ul>
+        <li>Rearange the controllers by clicking and dragging with the middle mouse button parent them together
+            correctly. This will ensure that when you move the waist or root controller, the nested controllers will
+            move as well.</li>
+    </ul>
+    <p><img src="images/rearange_controllers.PNG" alt="" /></p>
+    <h3>Constrain the joints to the controllers</h3>
+    <p>Now that we have all the joints and controllers created, we can bind them together so that the controllers
+        control the joints.</p>
+    <h4>Constrain the root.</h4>
+    <p>We want the root controller to control position and rotation of the entire skeleton.</p>
+    <ul>
+        <li>In the outliner, select the root controllers and ctrl + click the root joint so both are selected ( it is
+            important you do it in this order)</li>
+    </ul>
+    <p><img src="images/joint_and_controller.PNG" alt="" /></p>
+    <ul>
+        <li>Select the option box next to the top menu item <strong>Constrain &gt; Parent</strong></li>
+    </ul>
+    <p><img src="images/Constrain_parent_option.PNG" alt="" /></p>
+    <ul>
+        <li>Make sure the <strong>Maintain offset</strong> box is ticked</li>
+    </ul>
+    <p><img src="images/parent_maintain_offset.PNG" alt="" /></p>
+    <p>If you now move or rotate the root controller, the whole skeleton will move. If you try this make sure you reset
+        the position back to its original position before you continue.</p>
+    <h4>Constrain the orientation</h4>
+    <p>For the other joints we are just going to use the controllers to control the orientation.</p>
+    <ul>
+        <li>Select the waist controller and the spine joint using ctrl + click.</li>
+    </ul>
+    <p><img src="images/spine_waist_controller.PNG" alt="" /></p>
+    <ul>
+        <li>Select the options box next to <strong>Constrain &gt; orient</strong></li>
+    </ul>
+    <p><img src="images/orient_joints.PNG" alt="" /></p>
+    <ul>
+        <li>Make sure the <strong>Maintain offset</strong> box is ticked</li>
+    </ul>
+    <p><img src="images/constrain_offset.PNG" alt="" /></p>
+    <ul>
+        <li>Select <strong>Apply</strong></li>
+    </ul>
+    <p>Now you can do the same thing for the other 3 controllers.</p>
+    <ul>
+        <li>Constrain the orientation of the left_arm_controller to the left shoulder joint, the right_arm_controller to
+            the right shoulder joint and the neck controller to the neck joint.</li>
+    </ul>
+    <p>You can now controll the entire skeleton by just using the controllers.</p>
+    <p>For this example we will just create these few, but I hope you can see that on a more complex skeleton we could
+        create many more controller ( fingers, legs etc)</p>
+    <h3>Skinning</h3>
+    <p>Now we get to the best bit, we attach the skeleton to the mesh in a proccess call <strong>Skinning</strong></p>
+    <ul>
+        <li>Select the Body object and the root joint</li>
+    </ul>
+    <p><img src="images/root_and_body.PNG" alt="" /></p>
+    <ul>
+        <li>In the top menu, select the options box for <strong>Skin &gt; Bind skin</strong></li>
+    </ul>
+    <p><img src="images/bind_skin_options.PNG" alt="" /></p>
+    <p>Depending on the shape of the character you are rigging, you may need to experiement with these options for the
+        best result. but in our case we can leave them all as default and just change the Bind method.</p>
+    <ul>
+        <li>Change Bind method to <strong>Heat Map</strong></li>
+        <li>Press Apply</li>
+    </ul>
+    <p>The skeleton will now be bound to the character.</p>
+    <ul>
+        <li>Rotate the waist and arm controllers to see how the character reacts.</li>
+    </ul>
+    <h3>Eyes and Hat</h3>
+    <p>You may have noticed that the hat and eyes don't stick to the head.</p>
+    <ul>
+        <li>Make sure the head is in the correct place.</li>
+        <li>Select the hat and the eyes, then lasty also select the neck controller.</li>
+    </ul>
+    <p><img src="images/hatandeye.PNG" alt="" /></p>
+    <ul>
+        <li>press <strong>p</strong> on the keyboard to parent the hat and eyes to the controller.</li>
+    </ul>
+    <p>You can now rotate the neck controller and the eyes and hat should stick to the head.</p>
+</body>
+
+</html>
