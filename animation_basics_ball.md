@@ -22,11 +22,11 @@ This worksheet covers the fundamental skills needed to animate in Maya.
 
 ### Create a ball
 
-**Double click** on the polygon sphere button 
+**Double click** on the polygon sphere button to open the options.
 
 ![](images/make_sphere.PNG)
 
-- Set the radius to 10 and the divisions to 20
+- Set the radius to 10 and the divisions to 20.
 
 ![](images/sphere_settings.PNG)
 
@@ -41,9 +41,9 @@ Make sure you name the new texture appropriately and you can see it in the ball.
 
 (HINT: With the ball selected right click and choose "Assign new material" )
 
-## Animation workspace
+Please ask for help if you are unable to complete this challenge.
 
-Now that we have set up our scene we can start to animate.
+## Animation workspace
 
 When animating it will be helpful to have access to different panel.
 
@@ -51,7 +51,7 @@ When animating it will be helpful to have access to different panel.
 
 ![](images/animation_workspace.PNG)
 
-### Tour of workspace
+### Tour of the workspace
 
 On the right we have the **channel box** this is where we can keyframe the properties we want to animate.
 
@@ -75,7 +75,7 @@ We will use all these panels in the worksheet.
 
 We want the animation to run at 30 frames per second (FPS) and the total animation to be a 3 seconds long.
 
-- On the **range slider** panel change the FPS to **30 fps**.
+- On the **range slider** panel at the bottom of the screen change the FPS to **30 fps**.
 
 ![](images/30_fps.PNG)
 
@@ -115,7 +115,7 @@ The property should turn red to indicate that it has a key frame, you should als
 
 ### Another keyframe
 
-- Now move the playhead on the time slider to frame 15
+- Click on frame 15 on the time slider.
 
 ![](images/15.PNG)
 
@@ -143,7 +143,7 @@ You can now play your animation by clicking on the play button to the right of t
 
 ![](images/floaty.gif)
 
-- Make sure yours looks like the animation above, if not work out where you went wrong.
+- Make sure yours looks like the animation above. If it does not, go back and try to work out where you went wrong or ask for help.
 
 - Closely watch your animation, it should be going up and down but it doesn't really look like its bouncing. Why does it look wrong?
 
@@ -187,6 +187,7 @@ play the animation again to see the result.
 
 ![](images/hard_bounce.gif)
 
+This looks much better, but there are still some things we can do to improve it.
 
 ## Squash and  Stretch
 
@@ -212,11 +213,11 @@ firstly, we want the ball to stay spherical at the top of the bounce.
 
 We can now keyframe the squash when it hits the ground.
 
-- Move to frame 15 and squash the ball vertically by reducing the Y Scale and keyframing
+- Move to frame 15 and squash the ball vertically by reducing the Y Scale and keyframing.
 
-To conserve the balls volume, this means we need to simultaneously stretch it horizontally
+To conserve the balls volume, this means we need to simultaneously stretch it horizontally.
 
-- increase the  Scale X and Scale Z and keyframe. I have used 1.3 and 0.7.
+- Increase the  Scale X and Scale Z and keyframe. I have used 1.3 and 0.7.
 
 ![](images/key_squash.PNG)
 
@@ -228,7 +229,7 @@ You should notice that the ball now doesn't hit the ground.
 
 - Do the same for the second bounce at frame 45 and then look at your animation.
 
-- Why does it look wrong now? How can we fix it?
+The ball now squashes but it looks Why does it look wrong now? How can we fix it?
 
 ![](images/squash_bounce.gif)
 

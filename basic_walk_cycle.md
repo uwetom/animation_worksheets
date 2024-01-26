@@ -98,7 +98,7 @@ As this a looping animation we want the last frame to be the same as the first f
 
 ### Copy keyframes
 
-We now want to create middle contact pose, with the opposite leg forward
+We now want to create a middle contact pose, with the opposite leg forward.
 
 ![](images/contact2.png)
 
@@ -106,13 +106,15 @@ We now want to create middle contact pose, with the opposite leg forward
 
 Now we want to copy the feet keyframes from frame 1 and put them on the opposite feet at frame 15.
 
-- Select the back foot.
+- Select the back foot (the left leg)
 - Select frame 0 in the timeline.
 - Right click the timeline and select **copy**
 
 ![](images/copy_frame_1.PNG)
 
-- Select the front foot. 
+- Select the front foot (the right leg)
+- Select frame 15
+- Right click the timeline and select **paste**
 
 
 
