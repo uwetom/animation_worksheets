@@ -254,12 +254,18 @@ We now have a basic ball animation and you have covered all the basic skills of 
 
 ![](images/ball_final.gif)
 
-## Final challenge
+## Challenge
 
 - Add a keyframes to translate x or translate z to move it sideways as it bounces.
 
 - Try changing the amount you squash and stretch the ball, can you make it look like its made of a harder material?
 
-- What happens if you rotate the ball so that it spins as it move? consider how you may animate this in a different order next time to fix any issues.
 
+## Bike
 
+- On blackboard you will find a bicycle model, import this into a new scene in Maya and try to animate it.
+
+- Animate the bike forward
+- Make the wheels and pedals turn at the correct speed
+
+![](images/bike.png)
