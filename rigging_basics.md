@@ -1,6 +1,6 @@
 ## Rigging
 
-In this worksheet we are going to cover the fundamental concepts of rigging a character.
+In this worksheet we are going to cover the fundamental concepts of manually rigging a character.
 
 We will cover creating a skeleton and forward kinematic controller. 
 

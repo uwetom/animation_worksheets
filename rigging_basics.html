@@ -3,12 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Rigging basics</title>
+    <title>Basic rigging</title>
 </head>
 
 <body>
     <h2>Rigging</h2>
-    <p>In this worksheet we are going to cover the fundamental concepts of rigging a character.</p>
+    <p>In this worksheet we are going to cover the fundamental concepts of manually rigging a character.</p>
+    <p>We will cover creating a skeleton and forward kinematic controller.</p>
     <h3>Open Maya and set up workspace</h3>
     <ul>
         <li>Open Maya and make a new scene</li>
@@ -58,25 +59,25 @@
         </li>
     </ul>
     <p><img src="images/name_joints.PNG" alt="" /></p>
-    <h3>Add arm joints</h3>
+    <h4>Add arm joints</h4>
     <ul>
         <li>Select <em>spine_2</em> in the outliner, and with the joint tool selected add joints to the right shoulder
-            and hand.</li>
+            and hand. You may want to turn off grid snap to place them more acurately.</li>
     </ul>
     <p><img src="images/shoulder_joint.PNG" alt="" /></p>
     <ul>
-        <li>rename the right shoulder joint and the right hand joint in the Outliner.</li>
+        <li>Rename the right shoulder joint and the right hand joint in the Outliner.</li>
         <li>The joint chain in your Outliner should now look like this:</li>
     </ul>
     <p><img src="images/right_joint_chain.PNG" alt="" /></p>
     <ul>
-        <li>Check yours carefully, if it doesn't look right you can move joints around in the outliner by <strong>middle
+        <li>Check yours carefully, if it doesn�t look right you can move joints around in the outliner by <strong>middle
                 mouse clicking and dragging</strong> on them.</li>
         <li>If you cannot fix it, you can just delete the bad joints and make them again.</li>
     </ul>
     <h4>Mirror the arm</h4>
     <ul>
-        <li>our model is symetrical so we can mirror the right arm across.</li>
+        <li>Our model is symetrical so we can mirror the right arm across.</li>
         <li>Select <strong>right_shoulder</strong> in the outliner and select the option box next to <strong>Skeleton
                 &gt; Mirror joints</strong></li>
     </ul>
@@ -231,16 +232,18 @@
         <li>Rotate the waist and arm controllers to see how the character reacts.</li>
     </ul>
     <h3>Eyes and Hat</h3>
-    <p>You may have noticed that the hat and eyes don't stick to the head.</p>
+    <p>You may have noticed that the hat and eyes don�t stick to the head.</p>
     <ul>
         <li>Make sure the head is in the correct place.</li>
         <li>Select the hat and the eyes, then lasty also select the neck controller.</li>
     </ul>
     <p><img src="images/hatandeye.PNG" alt="" /></p>
     <ul>
-        <li>press <strong>p</strong> on the keyboard to parent the hat and eyes to the controller.</li>
+        <li>Press <strong>p</strong> on the keyboard to parent the hat and eyes to the controller.</li>
     </ul>
     <p>You can now rotate the neck controller and the eyes and hat should stick to the head.</p>
+    <h2>Finished Rig</h2>
+    <p>We have now created a functional rig for a character, the controllers can now be keyframed to animate.</p>
 </body>
 
 </html>
