@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Blend Shapes</title>
+</head>
+
+<body>
+    <h2>Blend shapes</h2>
+    <p>When rigging a character, a skeleton is added to to simulate the bones of a character.</p>
+    <p>However, most facial movement are not controlled by a skeleton, for these we use blend shapes.</p>
+    <p>Creating blend shapes should be done <strong>before</strong> you create your skeleton.</p>
+    <h3>Create the blend shapes</h3>
+    <h4>Import a character</h4>
+    <ul>
+        <li>Open Maya and import the blue character from Blackboard.</li>
+    </ul>
+    <p><img src="images/import_model.png" alt="" /></p>
+    <p><img src="images/import_character.png" alt="" /></p>
+    <h4>Duplicate the model</h4>
+    <p>Select the entire character group</p>
+    <p><img src="images/select_body.png" alt="" /></p>
+    <ul>
+        <li>In the top menu, select the option box next to <strong>Edit &gt; Duplicate Special</strong></li>
+    </ul>
+    <p><img src="images/duplicate_special.png" alt="" /></p>
+    <ul>
+        <li>In the options, change Translate to 60 and the number of copies to 3</li>
+    </ul>
+    <p><img src="images/duplicate_special_options.png" alt="" /></p>
+    <ul>
+        <li>Press apply and you should now have 4 blue Characters on the screen.</li>
+    </ul>
+    <h4>Rename the duplicated characters</h4>
+    <p>We now need to rename the copies, the names we choose will be used to label the blend shapes we create.</p>
+    <ul>
+        <li>
+            <p><strong>Double click</strong> on <strong>body1</strong> in the Outliner and rename it "right_blink"</p>
+        </li>
+        <li>
+            <p>In the same way, rename <strong>body2</strong> to "left_blink" and
+                <strong>body3</strong> to "mouth"
+            </p>
+        </li>
+    </ul>
+    <p><img src="images/rename_bodies.png" alt="" /></p>
+    <h4>Edit the meshes</h4>
+    <p>We want to leave the original character as it is, but we can now edit the features on each body of all the
+        duplicated meshes to match the new names.</p>
+    <ul>
+        <li>Select the <strong>right_blink</strong> character and edit the mesh to close the right eye.</li>
+    </ul>
+    <p><img src="images/right_blink.png" alt="" /></p>
+    <ul>
+        <li>Do the same thing with the <strong>left_blink</strong> character.</li>
+    </ul>
+    <p><img src="images/left_blink.png" alt="" /></p>
+    <ul>
+        <li>Finally, for the <strong>mouth</strong> character, alter the mouth in some way.</li>
+    </ul>
+    <p><img src="images/mouth.png" alt="" /></p>
+    <h4>Create blend shapes</h4>
+    <p>We can now use these 4 meshes to create our blend shapes.</p>
+    <ul>
+        <li>Hold down the <strong>shift</strong> key and select all 4 bodies. Make sure your select the original body
+            <strong>last</strong>.</li>
+    </ul>
+    <p><img src="images/bodies.png" alt="" /></p>
+    <ul>
+        <li>With the bodies selected, in the top menu select the options button next to <strong>Deform &gt; Blend
+                Shape</strong></li>
+    </ul>
+    <p><img src="images/blend_shape_options.png" alt="" /></p>
+    <ul>
+        <li>
+            <p>Our new blend shapes will be grouped togeter, <strong>BlendShape node</strong> is where we put the name
+                of the group, I choose "face"</p>
+        </li>
+        <li>
+            <p>Tick <strong>Delete targets</strong>, this will remove the duplicate meshes, leaving us with only the
+                original mesh.</p>
+        </li>
+        <li>
+            <p>Press Apply</p>
+        </li>
+    </ul>
+    <h4>Test out your Blend shapes</h4>
+    <p>If you select your original body mesh, you should now have a new tab in your attribute editor called
+        <strong>face</strong></p>
+    <p><img src="images/face_blend_shapes.png" alt="" /></p>
+    <p>You should see that there are 3 sliders called <strong>left_blink</strong>, <strong>mouth</strong> and
+        <strong>right_blink</strong></p>
+    <ul>
+        <li>Move the sliders to test out your blend shapes.</li>
+    </ul>
+    <p>As these are now attributes you can keyframe them the same way as you keyFrame the controllers on your rig.</p>
+    <h3>Create the controllers</h3>
+    <p>We can just use the blend shapes as they are, but to work professionally we want to create controllers for these
+        blend shapes so they can be easily accessed and animated.</p>
+    <p>To create the controllers follow the video bellow this worksheet in Blackboard.</p>
+</body>
+
+</html>
