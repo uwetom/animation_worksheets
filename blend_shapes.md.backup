@@ -4,15 +4,13 @@ When rigging a character, a skeleton is added to to simulate the bones of a char
 
 However, most facial movement are not controlled by a skeleton, for these we use blend shapes.
 
-Createing blend shapes should be done **before** you create your skeleton.
+Creating blend shapes should be done **before** you create your skeleton.
 
 ### Create the blend shapes
 
 #### Import a character
 
-- Open Maya and import the blue character from Blackboard.
-
-![](images/import_model.png)
+- Download and open the starter character from blackboard
 
 ![](images/import_character.png)
 

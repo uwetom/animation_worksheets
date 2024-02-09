@@ -8,11 +8,9 @@ Creating blend shapes should be done **before** you create your skeleton.
 
 ### Create the blend shapes
 
-#### Import a character
+#### Open the character
 
-- Open Maya and import the blue character from Blackboard.
-
-![](images/import_model.png)
+- Download and open the starter character from blackboard
 
 ![](images/import_character.png)
 

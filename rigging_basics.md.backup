@@ -235,11 +235,10 @@ You may have noticed that the hat and eyes don't stick to the head.
 
 - You can now do the same for the eyes, one at a time, parenting them to the neck controller.
 
-If you now rotate the neck controller, the eyes and hat should stick to te
+If you now rotate the neck controller, the eyes and hat should stick to the head.
 
+You could use the same method to parent objects to the snowmans hand.
 
-
-You can now rotate the neck controller and the eyes and hat should stick to the head.
 
 ## Finished Rig
 
