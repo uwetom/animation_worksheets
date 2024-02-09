@@ -106,7 +106,7 @@ The last thing that is important to do is reset the rotation or all the joints.
  
 - Make sure your settings match these
 
-![](images/orient_joints.PNG)
+![](images/orient_joint_options.PNG)
 
 - Press Apply.
 
@@ -219,14 +219,26 @@ The skeleton will now be bound to the character.
 
 You may have noticed that the hat and eyes don't stick to the head.
 
-- Make sure the head is in the correct place.
-- Select the hat and the eyes, then lasty also select the neck controller.
+- Make sure the head is back in the correct place.
 
-![](images/hatandeye.PNG)
+- Select the **neck_controller** then hold shift and select the hat ( doing it in this order is important).
 
-- Press **p** on the keyboard to parent the hat and eyes to the controller.
+![](images/neckandhat.png)
 
-You can now rotate the neck controller and the eyes and hat should stick to the head.
+- In the top menu, now select the small box next to **Constrain > parent**
+
+![](images/constrain_parent.png)
+
+- Check that the box that says "maintain offset" is ticked
+
+- Press apply
+
+- You can now do the same for the eyes, one at a time, parenting them to the neck controller.
+
+If you now rotate the neck controller, the eyes and hat should stick to the head.
+
+You could use the same method to parent objects to the snowmans hand.
+
 
 ## Finished Rig
 

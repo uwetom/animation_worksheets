@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Basic rigging</title>
+    <title>Rigging Basics</title>
 </head>
 
 <body>
@@ -71,7 +71,7 @@
     </ul>
     <p><img src="images/right_joint_chain.PNG" alt="" /></p>
     <ul>
-        <li>Check yours carefully, if it doesn�t look right you can move joints around in the outliner by <strong>middle
+        <li>Check yours carefully, if it doesn't look right you can move joints around in the outliner by <strong>middle
                 mouse clicking and dragging</strong> on them.</li>
         <li>If you cannot fix it, you can just delete the bad joints and make them again.</li>
     </ul>
@@ -124,7 +124,7 @@
     <ul>
         <li>Make sure your settings match these</li>
     </ul>
-    <p><img src="images/orient_joints.PNG" alt="" /></p>
+    <p><img src="images/orient_joint_options.PNG" alt="" /></p>
     <ul>
         <li>Press Apply.</li>
     </ul>
@@ -232,16 +232,34 @@
         <li>Rotate the waist and arm controllers to see how the character reacts.</li>
     </ul>
     <h3>Eyes and Hat</h3>
-    <p>You may have noticed that the hat and eyes don�t stick to the head.</p>
+    <p>You may have noticed that the hat and eyes don't stick to the head.</p>
     <ul>
-        <li>Make sure the head is in the correct place.</li>
-        <li>Select the hat and the eyes, then lasty also select the neck controller.</li>
+        <li>
+            <p>Make sure the head is back in the correct place.</p>
+        </li>
+        <li>
+            <p>Select the <strong>neck_controller</strong> then hold shift and select the hat ( doing it in this order
+                is important).</p>
+        </li>
     </ul>
-    <p><img src="images/hatandeye.PNG" alt="" /></p>
+    <p><img src="images/neckandhat.png" alt="" /></p>
     <ul>
-        <li>Press <strong>p</strong> on the keyboard to parent the hat and eyes to the controller.</li>
+        <li>In the top menu, now select the small box next to <strong>Constrain &gt; parent</strong></li>
     </ul>
-    <p>You can now rotate the neck controller and the eyes and hat should stick to the head.</p>
+    <p><img src="images/constrain_parent.png" alt="" /></p>
+    <ul>
+        <li>
+            <p>Check that the box that says '"maintain offset'" is ticked</p>
+        </li>
+        <li>
+            <p>Press apply</p>
+        </li>
+        <li>
+            <p>You can now do the same for the eyes, one at a time, parenting them to the neck controller.</p>
+        </li>
+    </ul>
+    <p>If you now rotate the neck controller, the eyes and hat should stick to the head.</p>
+    <p>You could use the same method to parent objects to the snowmans hand.</p>
     <h2>Finished Rig</h2>
     <p>We have now created a functional rig for a character, the controllers can now be keyframed to animate.</p>
 </body>
