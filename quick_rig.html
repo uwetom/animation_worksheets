@@ -1,2 +1,120 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title></title></head><body><h2>Quick Rig</h2>
-</body></html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Quick Rig</title>
+</head>
+
+<body>
+    <h1>Quick Rig</h1>
+    <p>Previously we manually rigged a character, it is important to understand how a rig is constructed, however, if
+        you are rigging a simple biped Character there are a number of ways to generate a standard rig.</p>
+    <p>In Maya this is called <strong>Quick rig</strong> which we will be using for this tutorial.</p>
+    <p>This rig works well for animating in Maya, it will also work well in Unity.</p>
+    <h2>Blend Shapes</h2>
+    <p>You don't require a character with blend shapes for this worksheet, however, It is important that if you want to
+        add blend shapes, you do this <strong>before</strong> rigging your character.</p>
+    <h2>Open your character</h2>
+    <p>If you completed the blend shape worksheet you should continue using that file, otherwise, download the original
+        character from the top of this page on Blackboard.</p>
+    <h2>Create a new rig</h2>
+    <ul>
+        <li>At the top left of the screen, change to the <strong>Rigging</strong> menu set.</li>
+    </ul>
+    <p><img src="images/riggin_menu_set.png" alt="" /></p>
+    <ul>
+        <li>In the top menu, Select <strong>Skeleton &gt; Quick Rig</strong></li>
+    </ul>
+    <p><img src="images/quick_rig.png" alt="" /></p>
+    <p>This will open up the Quick Rig menu.</p>
+    <ul>
+        <li>Start by pressing the <strong>+</strong> icon at the top to create a new character.</li>
+    </ul>
+    <p><img src="images/new_character.png" alt="" /></p>
+    <ul>
+        <li>Now change the option box to <strong>Step-BY-Step</strong> as we want to have control over how the rig is
+            created to get the best result.</li>
+    </ul>
+    <p><img src="images/step_by_step.png" alt="" /></p>
+    <p>We will go through the rigging process one step at a time. Each section has a rubbish bin icon which you can
+        press to go back a step in case things don't work as well as expected.</p>
+    <h3>1. Geometry</h3>
+    <p>First we add the geometry</p>
+    <ul>
+        <li>Select the body mesh in the outliner and press the <strong>+</strong> symbol in section 1.</li>
+    </ul>
+    <p><img src="images/add_geometry.png" alt="" /></p>
+    <h3>2. Guides</h3>
+    <p>The guides show where the joints of the character will go.</p>
+    <ul>
+        <li>In section 2, feel free to look at the guide settings, we will leave everything as it is and press
+            <strong>Create/Update</strong></li>
+    </ul>
+    <h3>3. Adjust the Guides</h3>
+    <p>Maya does it best to position the guide circles where it things your joints should go, they are normally quite
+        close, however, it doesn't usually get it completely right.</p>
+    <p>Before you move on to section 4 you need to adjust the guides on one side and then mirror them over to the other
+        side.</p>
+    <ul>
+        <li>
+            <p>Turn on wireframe (Shading &gt; wireframe), this can help you find the knees and elbows.</p>
+        </li>
+        <li>
+            <p>Start by moving the neck up slightly.</p>
+        </li>
+        <li>
+            <p>next adjust the right wrist, elbow and shoulder into position. Be careful to place the elbow where the
+                mesh has extra edges so it flexes correctly. Rotate the character around to check they are in the centre
+                of each limb.</p>
+        </li>
+        <li>
+            <p>Next, move onto the right hip, knee, ankle and toe. Place the guides where you think the joint in the
+                bones would go. the knees should be positioned where the mesh has extra edges, and slightly forward of
+                the hips and ankles to ensure the let bends in the correct direction.</p>
+        </li>
+    </ul>
+    <p>Now that you have positioned all the joints on the right of the character, you can mirror them. Press the mirror
+        key which you think represents what you want, if it goes wrong just undo and try again.</p>
+    <p><img src="images/mirror_guides.png" alt="" /></p>
+    <h3>4. Skeleton</h3>
+    <p>We can now generate the skeleton and control rig.</p>
+    <ul>
+        <li>Check you are happy with the Skeleton settings and then press <strong>Create/Update</strong></li>
+    </ul>
+    <p><img src="images/create_skeleton.png" alt="" /></p>
+    <p>Check that it looks correct, if it doesn't you can press the bin icon and adjust the guides and try again.</p>
+    <h3>5. Skinning</h3>
+    <p>The skeleton is now compleate so we just need to bind it to the mesh.</p>
+    <ul>
+        <li>Press <strong>Create/Update</strong> in the skinning section.</li>
+    </ul>
+    <p>Make sure you turn off wireframe mode (shading &gt; smooth shade all) and test out your new rig.</p>
+    <ul>
+        <li>Move the foot controllers up to make sure the knees bend correctly, and move the hands to make suer the
+            shoulder and elbows bend as expected.</li>
+    </ul>
+    <p>If anything doesn't work as expected, you can delete the skinning by pressing the bin icon.</p>
+    <h2>Finishing off</h2>
+    <p>You may notice that the eyes do not move with the head.</p>
+    <p>You can fix this the same way as we did with the snowman rigging tutorial.</p>
+    <ul>
+        <li>
+            <p>Select the head controller and then <strong>ctrl + click</strong> one of the eyes.</p>
+        </li>
+        <li>
+            <p>In the top menu, go to <strong>Constrain &gt; Parent</strong></p>
+        </li>
+        <li>
+            <p>Do the same thing with the other eye.</p>
+        </li>
+    </ul>
+    <p>Now if you rotate the head controller, the eyes will stay in the head.</p>
+    <h2>Weight Painting</h2>
+    <p>Although we have now rigged the Character, we have not quite finished.</p>
+    <p>If you rotate the arm down to the body you may notice that the chest squashes in. You can also see this if you
+        move the foot out to the side.</p>
+    <p>We will fix this in the next worksheet on Weight painting</p>
+</body>
+
+</html>

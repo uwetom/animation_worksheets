@@ -58,7 +58,7 @@ Maya does it best to position the guide circles where it things your joints shou
 
 Before you move on to section 4 you need to adjust the guides on one side and then mirror them over to the other side.
 
-- Turn on wireframe (Shading > wireframe), this can help you find the knees and elbows.
+- Turn on Wireframe (Shading > wireframe), this can help you find the knees and elbows.
 
 - Start by moving the neck up slightly.
 
@@ -87,7 +87,7 @@ The skeleton is now compleate so we just need to bind it to the mesh.
 
 - Press **Create/Update** in the skinning section.
 
-Make sure you turn off wireframe mode (shading > smooth shade all) and test out your new rig.
+Make sure you turn off wireframe mode (shading > shooth shade all) and test out your new rig.
 
 - Move the foot controllers up to make sure the knees bend correctly, and move the hands to make suer the shoulder and elbows bend as expected.
 
@@ -99,9 +99,9 @@ You may notice that the eyes do not move with the head.
 
 You can fix this the same way as we did with the snowman rigging tutorial.
 
-- Select the head controller and then **ctrl + click** one of the eyes. 
+- Select the head controller and then ctrl + select one of the eyes. 
 
-- In the top menu, go to **Constrain > Parent**
+- In the top menu, go to **Contrain > Parent**
 
 - Do the same thing with the other eye.
 
