@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Rigging Basics</title>
+    <title>Manual Rigging</title>
 </head>
 
 <body>
@@ -169,7 +169,7 @@
     <h3>Constrain the joints to the controllers</h3>
     <p>Now that we have all the joints and controllers created, we can bind them together so that the controllers
         control the joints.</p>
-    <h4>Constrain the root.</h4>
+    <h4>Constrain the root</h4>
     <p>We want the root controller to control position and rotation of the entire skeleton.</p>
     <ul>
         <li>In the outliner, select the root controllers and ctrl + click the root joint so both are selected ( it is
@@ -221,16 +221,48 @@
         <li>In the top menu, select the options box for <strong>Skin &gt; Bind skin</strong></li>
     </ul>
     <p><img src="images/bind_skin_options.PNG" alt="" /></p>
-    <p>Depending on the shape of the character you are rigging, you may need to experiement with these options for the
-        best result. but in our case we can leave them all as default and just change the Bind method.</p>
+    <p>Depending on the shape of the character you are rigging, you may want to experiment with these options for the
+        best result.</p>
     <ul>
-        <li>Change Bind method to <strong>Heat Map</strong></li>
-        <li>Press Apply</li>
+        <li>Start by Changing the <strong>bind method</strong> to <strong>Closest distance</strong></li>
+    </ul>
+    <p><img src="images/closest_distance.png" alt="" /></p>
+    <ul>
+        <li>Then press Apply</li>
     </ul>
     <p>The skeleton will now be bound to the character.</p>
     <ul>
         <li>Rotate the waist and arm controllers to see how the character reacts.</li>
     </ul>
+    <p>You may notice that when you rotate the arms down, the body and face are effected.</p>
+    <p><img src="images/warped_snowman.png" alt="" /></p>
+    <p>When Maya binds the mesh to the skeleton, it uses the bind method to determine which areas of the mesh are
+        influenced by each joint.</p>
+    <p>We can experiment with different bind methods to try to improve the result.</p>
+    <h3>Unbind</h3>
+    <p>We can unbind the skin and try again.</p>
+    <ul>
+        <li>
+            <p>First undo until the snowman is back at their original position.</p>
+        </li>
+        <li>
+            <p>With the snowman selected, go to the top menu and choose <strong>Skin &gt; Unbind Skin</strong></p>
+        </li>
+    </ul>
+    <p>We can now re bind the skin with a different method.</p>
+    <ul>
+        <li>Select the root joint and the snowman again and In the top menu, select the options box for <strong>Skin
+                &gt; Bind skin</strong></li>
+    </ul>
+    <p><img src="images/bind_skin_options.PNG" alt="" /></p>
+    <ul>
+        <li>This time select a different binding method, I found that <strong>Heat map</strong> worked best in this
+            situation, but feel free to experiment.</li>
+    </ul>
+    <p>You can now test you rig again by rotating the controllers. It doesn't need to be perfect but you want to get it
+        as good as you can. In the next worksheet I will show you how we can refine the binding using weight painting.
+    </p>
+    <p>But for now, we will move on.</p>
     <h3>Eyes and Hat</h3>
     <p>You may have noticed that the hat and eyes don't stick to the head.</p>
     <ul>
@@ -238,8 +270,8 @@
             <p>Make sure the head is back in the correct place.</p>
         </li>
         <li>
-            <p>Select the <strong>neck_controller</strong> then hold shift and select the hat ( doing it in this order
-                is important).</p>
+            <p>Select the <strong>neck_controller</strong> then <strong>hold ctrl</strong> and select the hat (doing it
+                in this order is important).</p>
         </li>
     </ul>
     <p><img src="images/neckandhat.png" alt="" /></p>
@@ -249,7 +281,7 @@
     <p><img src="images/constrain_parent.png" alt="" /></p>
     <ul>
         <li>
-            <p>Check that the box that says '"maintain offset'" is ticked</p>
+            <p>Check that the box that says "maintain offset" is ticked</p>
         </li>
         <li>
             <p>Press apply</p>
@@ -262,6 +294,8 @@
     <p>You could use the same method to parent objects to the snowmans hand.</p>
     <h2>Finished Rig</h2>
     <p>We have now created a functional rig for a character, the controllers can now be keyframed to animate.</p>
+    <h2>Challenge</h2>
+    <p>Create a simple animation with your snowman character. Make it</p>
 </body>
 
 </html>
