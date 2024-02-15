@@ -178,7 +178,7 @@ For the other joints we are just going to use the controllers to control the ori
 
 - Select the options box next to **Constrain > orient**
 
-![](images/orient_joints.PNG)
+![](images/Contstrain_options_box.PNG)
 
 - Make sure the **Maintain offset** box is ticked
 

@@ -11,7 +11,7 @@ We will cover creating a skeleton and forward kinematic controller.
 
 ![](images/rigging.PNG)
 
-### Import the model.
+### Import the model
 
 - Import the snowman model from Blackboard by going to **File > Import**
 
@@ -149,7 +149,7 @@ To make the skeleton easier to animate we add controllers.
 
 Now that we have all the joints and controllers created, we can bind them together so that the controllers control the joints.
 
-#### Constrain the root.
+#### Constrain the root
 
 We want the root controller to control position and rotation of the entire skeleton.
 
@@ -178,7 +178,7 @@ For the other joints we are just going to use the controllers to control the ori
 
 - Select the options box next to **Constrain > orient**
 
-![](images/orient_joints.PNG)
+![](images/Contstrain_options_box.PNG)
 
 - Make sure the **Maintain offset** box is ticked
 
