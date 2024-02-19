@@ -85,13 +85,16 @@ Check that it looks correct, if it doesn't you can press the bin icon and adjust
 
 The skeleton is now compleate so we just need to bind it to the mesh.
 
+By defult, the **Binding Method** is set to **GVB** but we can press the cog icon and change the settings if we dont get a very good result.
+
 - Press **Create/Update** in the skinning section.
 
 Make sure you turn off wireframe mode (shading > smooth shade all) and test out your new rig.
 
-- Move the foot controllers up to make sure the knees bend correctly, and move the hands to make suer the shoulder and elbows bend as expected.
+- Move the foot controllers up to make sure the knees bend correctly, and move the hands to make sure the shoulder and elbows bend as expected.
 
-If anything doesn't work as expected, you can delete the skinning by pressing the bin icon.
+If anything doesn't work as expected, you can delete the skinning by pressing the bin icon, and then press the cog icon to change the settings before binding again.
+
 
 ## Finishing off
 
@@ -105,13 +108,13 @@ You can fix this the same way as we did with the snowman rigging tutorial.
 
 - Do the same thing with the other eye.
 
-Now if you rotate the head controller, the eyes will stay in the head.
+Now if you rotate the head controller, the eyes will stay in the head (mostly).
 
 ## Weight Painting
 
 Although we have now rigged the Character, we have not quite finished. 
 
-If you rotate the arm down to the body you may notice that the chest squashes in. You can also see this if you move the foot out to the side.
+If you rotate the arm down to the body you may notice that the chest squashes in. You can also see this if you move the foot out to the side. The eyes will also bulge out of the head if you move it too far down.
 
 We will fix this in the next worksheet on Weight painting
 
