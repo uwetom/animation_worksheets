@@ -85,7 +85,17 @@ Check that it looks correct, if it doesn't you can press the bin icon and adjust
 
 The skeleton is now compleate so we just need to bind it to the mesh.
 
-By defult, the **Binding Method** is set to **GVB** but we can press the cog icon and change the settings if we dont get a very good result.
+By default, the **Binding Method** is set to **GVB** this will give us a good result, but I recomend you experiment with your mesh to find the best method. 
+
+We are going to change it.
+
+- Press the cog icon
+
+![](images/skinning_cog.png)
+
+- Change the Binding method to **Heat Map** then press **Close**
+
+![](images/heat_map_2.png)
 
 - Press **Create/Update** in the skinning section.
 
@@ -93,8 +103,9 @@ Make sure you turn off wireframe mode (shading > smooth shade all) and test out 
 
 - Move the foot controllers up to make sure the knees bend correctly, and move the hands to make sure the shoulder and elbows bend as expected.
 
-If anything doesn't work as expected, you can delete the skinning by pressing the bin icon, and then press the cog icon to change the settings before binding again.
+If anything doesn't work as expected, you can delete the skinning by pressing the bin icon, and then press the cog icon to try different settings before binding again.
 
+It is very important that we create the best rig that we can at this stage, it will save us a lot of difficult cleaning up later.
 
 ## Finishing off
 
@@ -114,7 +125,7 @@ Now if you rotate the head controller, the eyes will stay in the head (mostly).
 
 Although we have now rigged the Character, we have not quite finished. 
 
-If you rotate the arm down to the body you may notice that the chest squashes in. You can also see this if you move the foot out to the side. The eyes will also bulge out of the head if you mo
+If you rotate the head down the eyes will bulge out of their sockets.
 
 We will fix this in the next worksheet on Weight painting
 
