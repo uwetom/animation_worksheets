@@ -16,8 +16,6 @@ IMPORTANT - Creating blend shapes should be done **before** binding your skeleto
 
 #### Duplicate the model
 
-First we need to make copies which we can then edit to 
-
 Select the **body** mesh in the Outliner.
 
 ![](images/select_body.png)
