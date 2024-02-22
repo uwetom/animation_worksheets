@@ -4,7 +4,7 @@ When rigging a character, a skeleton is added to to simulate the bones of a char
 
 However, most facial movement are not controlled by a skeleton, for these we use blend shapes.
 
-Creating blend shapes should be done **before** you create your skeleton.
+IMPORTANT - Creating blend shapes should be done **before** binding your skeleton to your mesh
 
 ### Create the blend shapes
 
@@ -16,7 +16,9 @@ Creating blend shapes should be done **before** you create your skeleton.
 
 #### Duplicate the model
 
-Select the entire character group
+First we need to make copies which we can then edit to 
+
+Select the **body** mesh in the Outliner.
 
 ![](images/select_body.png)
 
